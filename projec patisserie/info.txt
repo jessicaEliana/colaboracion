@@ -1,0 +1,4 @@
+Abre la consola e instala el servdor : pip install Flask
+Ejecuta la aplicacion por consola python: python app.py
+Ve en navegador a: http://localhost:5000
+Listo
