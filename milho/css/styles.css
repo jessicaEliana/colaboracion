@@ -52,3 +52,31 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #555;
 }
+
+/*Configuración del footer, dos columnas*/
+footer {
+    display: flex;
+}
+
+.columna {
+    width: 150px;
+    height: auto;
+    /*margin-right: 20px;  Ajusta este margen según tu diseño */
+    border: 1px orange solid;
+    text-align: center;
+}
+
+/* Estilos adicionales según tu preferencia */
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    display: block;
+    margin: auto; /* Espacio entre botones */
+    margin-bottom: 5px;
+    
+}
