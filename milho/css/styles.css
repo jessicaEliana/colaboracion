@@ -1,0 +1,54 @@
+/*Configuramops el body para que no se solape con el nav*/
+body {
+    height: auto;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 50px; /* Ajusta este valor según la altura de tu menú de navegación */
+    
+    
+}
+/*Configuracion de las seccion*/
+section {
+    height:500px ;
+    width: 300px;
+    border: 1px red solid;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/*Configuracion del nav abajo*/
+nav {
+    position: fixed;
+    bottom: 0;
+    width: 300px;
+    background-color: #333;
+    left: 50%; /* Centra horizontalmente el nav */
+    transform: translateX(-50%); /* Corrige la posición para centrar */
+    
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 1px;
+    margin: 0;
+    text-align: center;
+    
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1px 1px;
+    color: #fff;
+    text-decoration: none;
+    width:60px ;
+    
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
