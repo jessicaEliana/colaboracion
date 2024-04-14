@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Botón que se mueve con el scroll</title>
+<style>
+  #boton {
+    position: fixed;
+    top: 20px; /* Posición inicial en la parte superior */
+    right: 20px;
+    z-index: 999; /* Asegura que el botón esté en la capa superior */
+    opacity: 1;
+    transition: top 0.3s ease, opacity 0.5s ease; /* Animación de transición para la posición y la opacidad */
+  }
+
+  #boton.oculto {
+    opacity: 0;
+  }
+</style>
+</head>
+<body>
+<button id="boton">Botón</button>
+<div style="height: 2000px;"> <!-- Simula contenido largo para permitir el scroll -->
+  <!-- Aquí puedes agregar tu contenido -->
+</div>
+
+<script>
+  var boton = document.getElementById('boton');
+  var lastScrollTop = 0;
+
+  window.addEventListener('scroll', function() {
+    var scrollTop = window.scrollY;
+
+    if (scrollTop > lastScrollTop) { // Si se está desplazando hacia abajo
+      boton.style.top = '50px'; // Baja el botón un poco
+      boton.classList.add('oculto'); // Oculta el botón
+    } else {
+      boton.style.top = '20px'; // Vuelve el botón a su posición inicial
+      boton.classList.remove('oculto'); // Muestra el botón
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Asegúrate de que la última posición de desplazamiento no sea negativa
+  });
+</script>
+</body>
+</html>

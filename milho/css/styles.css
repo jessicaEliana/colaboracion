@@ -77,7 +77,14 @@ section {
     padding: 5px;
     margin-bottom: 5px;
 }
-
+/*Configuración del ocultar con scroll*/
+.elemento {
+    opacity: 1;
+    transition: opacity 0.5s ease; /* Animación de transición */
+  }
+  .ocultar {
+    opacity: 0;
+  }
 /*Configuracion del nav abajo*/
 nav {
     position: fixed;

@@ -10,15 +10,29 @@ document.addEventListener('click', function(e) {
 });
 
 // Función para ocultar con el scroll el heder
-let lastScrollTop = 0;
-window.addEventListener("scroll", function() {
-    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
-    if (currentScroll > lastScrollTop) {
-        // Abajo
-        document.getElementById("miHeader").classList.add("ocultar");
+var lastScrollTop = 0; // Variable para almacenar la última posición de desplazamiento
+
+  window.addEventListener('scroll', function() {
+    var elemento = document.querySelector('.elemento');
+    var scrollTop = window.scrollY;
+
+    if (scrollTop > lastScrollTop) {
+      elemento.classList.add('ocultar'); // Si se desplaza hacia abajo, oculta el elemento
     } else {
-        // Arriba
-        document.getElementById("miHeader").classList.remove("ocultar");
+      elemento.classList.remove('ocultar'); // Si se desplaza hacia arriba, muestra el elemento
     }
-    lastScrollTop = currentScroll;
-});
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Asegúrate de que la última posición de desplazamiento no sea negativa
+  });
+
+//funcion scroll elementos
+window.addEventListener('scroll', function() {
+    var elemento = document.querySelector('.elemento');
+    var posicionY = window.scrollY;
+
+    if (posicionY > 100) { // Cambia 100 por la posición en la que quieres que el elemento desaparezca
+      elemento.classList.add('ocultar');
+    } else {
+      elemento.classList.remove('ocultar');
+    }
+  });
