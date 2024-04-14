@@ -8,3 +8,17 @@ document.addEventListener('click', function(e) {
         document.getElementById('sidebar').style.left = '-150px';
     }
 });
+
+// Función para ocultar con el scroll el heder
+let lastScrollTop = 0;
+window.addEventListener("scroll", function() {
+    let currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+    if (currentScroll > lastScrollTop) {
+        // Abajo
+        document.getElementById("miHeader").classList.add("ocultar");
+    } else {
+        // Arriba
+        document.getElementById("miHeader").classList.remove("ocultar");
+    }
+    lastScrollTop = currentScroll;
+});

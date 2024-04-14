@@ -27,13 +27,51 @@ section {
     transition: left 0.3s ease; /* Agregamos una transición para suavizar la apertura/cierre */
     padding: 10px;
     box-sizing: border-box;
+    display: inline-block;header {
+        width: 300px; /* Establecemos el ancho del encabezado */
+        display: flex; /* Usamos flexbox para alinear elementos horizontalmente */
+        align-items: center; /* Centramos verticalmente los elementos */
+    }
+    
+    h1 {
+        margin: 0; /* Elimina los márgenes predeterminados del título */
+    }
+    
+    #botonAbrirSidebar {
+        margin-left: auto; /* Empuja el botón hacia la derecha */
+    }
+    
+    #sidebar {
+        position: fixed;
+        left: -150px; /* Inicialmente fuera de la pantalla */
+        top: 0;
+        width: 150px;
+        height: 100%;
+        background-color: #f0f0f0;
+        transition: left 0.3s ease; /* Agregamos una transición para suavizar la apertura/cierre */
+        padding: 10px;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+    
+    .seccion {
+        margin-bottom: 10px;
+    }
+    
+    button {
+        display: block;
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    
 }
 
 .seccion {
     margin-bottom: 10px;
 }
 
-button{
+#botonAbrirSidebar{
     display: block;
     width: 100%;
     padding: 5px;
