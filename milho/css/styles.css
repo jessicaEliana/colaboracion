@@ -3,7 +3,7 @@ body {
     height: auto;
     width: 300px;
     margin: auto;
-    margin-bottom: 50px; /* Ajusta este valor según la altura de tu menú de navegación */
+    margin-bottom: 17px; /* Ajusta este valor según la altura de tu menú de navegación */
     
     
 }
@@ -15,6 +15,29 @@ section {
     margin-left: auto;
     margin-right: auto;
 
+}
+/*configuración asaid*/
+#sidebar {
+    position: fixed;
+    left: -150px; /* Inicialmente fuera de la pantalla */
+    top: 0;
+    width: 150px;
+    height: 100%;
+    background-color: #f0f0f0;
+    transition: left 0.3s ease; /* Agregamos una transición para suavizar la apertura/cierre */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.seccion {
+    margin-bottom: 10px;
+}
+
+button{
+    display: block;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 5px;
 }
 
 /*Configuracion del nav abajo*/
@@ -55,7 +78,28 @@ nav ul li a:hover {
 
 /*Configuración del footer, dos columnas*/
 footer {
+    display: block;
+}
+#footer2{
     display: flex;
+}
+#redes {
+    display: flex;
+    justify-content: space-between; /* Distribuir botones horizontalmente con espacios iguales */
+    width: 300px;
+    height: 25px;
+    border: 1px yellow solid;
+    padding: 0px; /* Agregar un poco de espacio alrededor de los botones */
+}
+
+.redes {
+    font-size: 11px; /* Ajustar el tamaño de la fuente según tu preferencia */
+    height: 100%; /* Aprovechar el alto completo del contenedor padre */
+    width: 60px; /* Establecer un ancho fijo para cada botón */
+    border: 1px white solid;
+    display: flex; /* Para alinear texto verticalmente */
+    align-items: center; /* Para alinear texto verticalmente */
+    justify-content: center; /* Para alinear texto horizontalmente */
 }
 
 .columna {
@@ -64,6 +108,7 @@ footer {
     /*margin-right: 20px;  Ajusta este margen según tu diseño */
     border: 1px orange solid;
     text-align: center;
+
 }
 
 /* Estilos adicionales según tu preferencia */
