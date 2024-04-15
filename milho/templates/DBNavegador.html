@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Almacenamiento Local</title>
+</head>
+<body>
+    <h2>Almacenamiento Local</h2>
+    <input type="text" id="nombre" placeholder="Nombre"><br>
+    <input type="email" id="email" placeholder="Email"><br>
+    <button onclick="guardarDatos()">Guardar Datos</button>
+    <button onclick="mostrarDatos()">Mostrar Datos</button>
+
+    <script>
+        function guardarDatos() {
+            var nombre = document.getElementById("nombre").value;
+            var email = document.getElementById("email").value;
+            localStorage.setItem("nombre", nombre);
+            localStorage.setItem("email", email);
+            alert("Datos guardados en el almacenamiento local.");
+        }
+
+        function mostrarDatos() {
+            var nombre = localStorage.getItem("nombre");
+            var email = localStorage.getItem("email");
+            if (nombre && email) {
+                alert("Nombre: " + nombre + "\nEmail: " + email);
+            } else {
+                alert("No hay datos guardados.");
+            }
+        }
+    </script>
+</body>
+</html>
