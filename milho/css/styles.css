@@ -114,6 +114,7 @@ nav ul li a {
     color: #fff;
     text-decoration: none;
     width:60px ;
+    font-size: 8px;
     
 }
 
@@ -134,11 +135,11 @@ footer {
     width: 300px;
     height: 25px;
     border: 1px yellow solid;
-    padding: 0px; /* Agregar un poco de espacio alrededor de los botones */
+    padding: 1px; /* Agregar un poco de espacio alrededor de los botones */
 }
 
 .redes {
-    font-size: 11px; /* Ajustar el tamaño de la fuente según tu preferencia */
+    font-size: 8px; /* Ajustar el tamaño de la fuente según tu preferencia */
     height: 100%; /* Aprovechar el alto completo del contenedor padre */
     width: 60px; /* Establecer un ancho fijo para cada botón */
     border: 1px white solid;
