@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scroll al Final del Div</title>
+    <style>
+        /* Estilo para el div */
+        #miDiv {
+            width: 300px;
+            height: 200px; /* Altura del div, ajusta según tus necesidades */
+            border: 1px solid black;
+            overflow-y: auto; /* Habilitar el scroll vertical */
+        }
+    </style>
+</head>
+<body>
+    <div id="miDiv">
+        <!-- Contenido del div -->
+        <!-- Agrega aquí tu texto -->
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. ...</p>
+        <iframe src="DBtxt.html" frameborder="0" width="200px" height="500px" style="border: 1px red solid"></iframe>
+    </div>
+
+    <script>
+        // Función para desplazar el scroll al final del div
+        function scrollAlFinal() {
+            var div = document.getElementById("miDiv");
+            div.scrollTop = div.scrollHeight;
+        }
+
+        // Llamar a la función para desplazar el scroll al final cuando la página se carga
+        window.onload = scrollAlFinal;
+    </script>
+</body>
+</html>
