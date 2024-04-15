@@ -1,0 +1,246 @@
+:root {
+    /* Variables de css */
+        --bg-color: #fff;
+        --bg-input-color: #4f31572c;
+        --primary-color:#f17ab6;
+        --secondary-color:#E63E77;
+        --third-color:rgba(162, 236, 199, 0.589);
+        --color: #000;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--primary-color);
+    /* background-color: black; */
+    /* color: pink; */
+    font-family: Nunito, Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+p, input, label {
+    color: var(--color);
+}
+
+/* #barra-nav {
+    text-decoration: none;
+    border: 2px solid aquamarine;
+    border-radius: 7px;
+    padding: 10PX;
+    background-color: grey;
+    position: relative;
+    right: 0
+} */
+
+#logo a {
+        /* border: 2px solid red; */
+        font-size: 30px;
+        
+        text-decoration: none;
+
+}
+
+#logo {
+    /* border: 1px solid red; */
+    margin: 5px 0;
+    padding: 5px;
+    
+}
+
+nav {
+    /* border: 1px solid white; */
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    
+    
+}
+
+ul {
+    /* border: 1px solid yellow; */
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 5px;
+}
+
+
+.barra-nav {
+    
+   
+    /* border: 1px solid yellow; */
+    color: var(--primary-color);
+    font-weight:bold;
+    text-decoration: none;
+    /* margin: 5px; */
+    padding: 10px;
+    border-radius: 10px;
+    /* margin-top: 5px; */
+    /* z-index: 100; */
+}
+
+.barra-nav:hover {
+    background-color: pink;
+    color: #000;
+    border: #000;
+    transition: all 1s ease;
+}
+
+
+section {
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contenedor {
+    background-color: var(--third-color);
+    width: 75%;
+    height: 100%;
+    padding: 100px;
+    
+}
+
+.banner {
+    height: 100vh;
+    /* border: 2px dotted green; */
+    background-image: url(../img/assortment-pieces-cake.jpg);
+    background-size: cover;
+    background-position: center;
+    box-shadow:inset 0 0 0 2000px rgba(84, 84, 84, 0.5);
+}
+
+.black-letter {
+    color: rgba(5, 5, 5, 0.582);
+    font-size: xx-large;
+    font-weight: 900;
+    font-variant: unset;
+}
+
+.linea-de-menu {
+    display: inline-block;
+}
+
+.centrar-contenido {
+    text-align: center;
+    width: 75;
+}
+
+.text-justify{
+    text-align: justify;
+}
+
+/* seccion productos */
+
+.products-container {
+    text-align: center; /* Centrar el contenido */
+    
+}
+
+.productos {
+    /* border: 2px solid black; */
+    display: grid;
+    gap: 10px;
+}
+
+.grilla-productos {
+    /* border: 2px solid yellowgreen; */
+    
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, auto);
+    color: white;
+}
+
+/*Inicio de estilos para cards*/
+.card {
+display: inline-block;
+width: 200px; /* Ancho de la card */
+margin: 20px; /* Espacio entre las cards */
+border: 1px solid #ddd;
+border-radius: 5px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.card-img {
+width: 100%;
+height: auto;
+
+
+}
+
+.card-content {
+padding: 15px;
+}
+
+.card-title {
+margin-top: 0;
+}
+
+.card-description {
+margin-bottom: 0;
+}
+
+/* formulario milo */
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    
+}
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* .seccion-contacto, input, label, form {
+    background-color: gray;
+} */
+
+
+
+footer {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    display: flex;
+    justify-content:flex-end;
+    position: relative; /* Agregamos posición relativa */
+    z-index: 1; /* Agregamos z-index para que esté por encima del contenido */
+    /* margin-top: 10px; */
+}
+
+footer a {
+    padding: 5px;
+    
+}
