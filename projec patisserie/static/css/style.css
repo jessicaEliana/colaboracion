@@ -1,0 +1,206 @@
+:root {
+    /* Variables de css */
+        --bg-color: #fff;
+        --bg-input-color: #4f31572c;
+        --primary-color:#f17ab6;
+        --secondary-color:#E63E77;
+        --third-color:rgba(162, 236, 199, 0.589);
+        --color: #000;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    
+    /* background-color: black; */
+    /* color: pink; */
+    font-family: Nunito, Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+header  {
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    background-color: #ffffbf;
+    /* #a60029 #c51d34 */
+    align-items: center;
+    padding: 10px;
+}
+
+p, input, label {
+    color: var(--color);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif, Verdana, Geneva, Tahoma;
+}
+
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+
+
+#menu_navegacion{
+    width: 500px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+ul, ol{
+    list-style: none;
+}
+
+.barra_navegacion li a {
+    background-color: #f01e3a;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: flex;
+}
+
+.barra_navegacion li a:hover {
+    background-color: #a60029;
+}
+
+.barra_navegacion > li {
+    float:left ;
+}
+
+.barra_navegacion li ul {
+    display: none;  
+    position: absolute;
+    min-width: 140px;
+}
+
+.barra_navegacion li:hover > ul {
+    display: block;
+}
+
+.barra_navegacion li ul li {
+    position: relative;
+}
+
+.barra_navegacion li ul li ul {
+    right: -140px;
+    top:0px;
+}
+
+section div img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* grilla de contenido */
+.item-slogan { grid-area: slogan; }
+.item-tortas {grid-area: tortas;}
+.item-postres {grid-area: postres;}
+.item-salados {grid-area: salados;}
+.item-sucursales {grid-area: sucursales;}
+.item-novedades {grid-area: novedades;}
+
+.container {
+    display: grid;
+    grid:
+    'slogan slogan slogan slogan slogan slogan'
+    'slogan slogan slogan slogan slogan slogan'
+    'slogan slogan slogan slogan slogan slogan'
+    'tortas tortas postres postres salados salados'
+    'tortas tortas postres postres salados salados'
+    'tortas tortas postres postres salados salados'
+    'sucursales sucursales sucursales novedades novedades novedades'
+    'sucursales sucursales sucursales novedades novedades novedades'
+    'sucursales sucursales sucursales novedades novedades novedades';
+    background-color: #fcfdfd;
+    grid-gap: 20px;
+    padding: 10px;
+}
+
+.container > div {
+    background-color: #ffffbf;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+}
+
+
+
+/* fin de grilla */
+
+/* slogan */
+
+.contenido-slogan > p, h3 {
+    
+    font-size: 40px;
+    color: #a60029;
+}
+
+/* fin de slogan */
+
+/* grilla para producto */
+
+.grilla-productos{
+    display: grid;
+    background-color: #a60029;
+    gap: 10px;
+    grid-template-columns: auto auto;
+    padding: 5px;
+}
+
+.grilla-productos> div{
+    background-image: url(../img/mini-cheese.png);
+    border: 2px solid #a60029;
+    padding: 10px;
+    font-size: 15px;
+    text-align: center;
+    height: 200px;
+
+}
+
+.item-titulo{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+
+/* fin grilla para productos */
+
+footer {
+    height: 30vh;
+    background-color: #ffffbf;
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+/* botón para consulta */
+button{
+    height: 50px;
+    background-color: #a60029;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50px;
+    color: #fcfdfd;
+    border-color: transparent;
+}
+
+h4{
+    color: #a60029;
+    font-size: 50px;
+}
+
+
+@media (max-width: 1000px){
+    header{
+        flex-direction: column;
+    }
+}
