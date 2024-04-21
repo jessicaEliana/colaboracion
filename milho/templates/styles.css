@@ -14,6 +14,107 @@
     position: absolute;
     width: 40px;
     height: 40px;
-    background-color: black;
-    border-radius: 100%;
+    background-color: red;
+    border-radius: 50%;
+}
+/*boton 3d*/
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.btn {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Añade estilos específicos para tus figuras 3D aquí */
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.btn {
+    position: relative; /* Para posicionar el elemento 3D con respecto al botón */
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* Estilo para la figura 3D */
+.figure {
+    position: absolute; /* Para superponer la figura sobre el botón */
+    top: -10px; /* Ajusta la posición vertical según necesites */
+    left: 50%; /* Centra horizontalmente la figura sobre el botón */
+    transform: translateX(-50%); /* Centra horizontalmente la figura sobre el botón */
+    width: 20px; /* Ajusta el tamaño de la figura según necesites */
+    height: 20px; /* Ajusta el tamaño de la figura según necesites */
+    background-color: red; /* Color de la figura */
+    border-radius: 50%; /* Para que la figura sea circular */
+    display: none; /* La figura estará oculta inicialmente */
+}
+
+.btn:hover .figure {
+    display: block; /* Muestra la figura al hacer hover sobre el botón */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }

@@ -22,3 +22,78 @@ document.addEventListener("mousemove", function(event) {
     pupil.style.left = pupilPosX + "px";
     pupil.style.top = pupilPosY + "px";
 });
+
+
+//boton 3d
+
+document.getElementById('btn1').addEventListener('click', function() {
+    showModal('figura1.jpg');
+});
+
+document.getElementById('btn2').addEventListener('click', function() {
+    showModal('figura2.jpg');
+});
+
+function showModal(imageSrc) {
+    var modal = document.getElementById('modal');
+    var modalContent = document.getElementById('modal-content');
+
+    // Limpiar contenido anterior
+    modalContent.innerHTML = '';
+
+    // Crear elemento de imagen 3D
+    var img = document.createElement('img');
+    img.src = imageSrc;
+    img.alt = 'Figura 3D';
+
+    // Agregar imagen al contenido del modal
+    modalContent.appendChild(img);
+
+    // Mostrar modal
+    modal.style.display = 'block';
+}
+
+// Cerrar modal al hacer clic fuera de él
+window.onclick = function(event) {
+    var modal = document.getElementById('modal');
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+}
+
+
+
+document.getElementById('btn1').addEventListener('click', function() {
+    showModal('figura1.jpg');
+});
+
+document.getElementById('btn2').addEventListener('click', function() {
+    showModal('figura2.jpg');
+});
+
+function showModal(imageSrc) {
+    var modal = document.getElementById('modal');
+    var modalContent = document.getElementById('modal-content');
+
+    // Limpiar contenido anterior
+    modalContent.innerHTML = '';
+
+    // Crear elemento de imagen 3D
+    var img = document.createElement('img');
+    img.src = imageSrc;
+    img.alt = 'Figura 3D';
+
+    // Agregar imagen al contenido del modal
+    modalContent.appendChild(img);
+
+    // Mostrar modal
+    modal.style.display = 'block';
+}
+
+// Cerrar modal al hacer clic fuera de él
+window.onclick = function(event) {
+    var modal = document.getElementById('modal');
+    if (event.target == modal) {
+        modal.style.display = 'none';
+    }
+}
