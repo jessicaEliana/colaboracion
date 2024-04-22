@@ -92,6 +92,10 @@ transition: all 1s ease;
     color: aliceblue;
 }
 
+.proyecto-item img {
+    width: 400px
+}
+
 footer {
     background-color: var(--secondary-color);
     padding: 10px;
