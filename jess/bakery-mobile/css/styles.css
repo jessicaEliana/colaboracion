@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(236, 204, 204);
+}
+
+/* contenido del HEADER */
+#contenido-logo {
+    border: 1px solid transparent;
+    width: 100%;
+    height: auto;
+    margin: 4px auto;
+    background-size: cover;
+    background-color: #050505;
+
+    
+}
+
+/* lista de menu */
+.barra-contenido{
+    display: flex;
+    position: sticky;
+    bottom: 0px;
+}
+
+.contenido-lista-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-width: 1px;
+    list-style: none;
+
+    padding: 5px;
+    margin: 0px 5px;
+    background-color: white;
+}
+
+/* clase para los items */
+.contenido-link {
+
+    color: white;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid white;
+    background-color: white;
+    border: none;
+    
+    border-right: 2px solid palevioletred;
+    
+    
+}
+
+/* ENLACES DE LOS ITEMS DENTRO DE LA CLASE-LISTA-DESORDENADA */
+.contenido-link a {
+    background-color: white;
+    border: 1px solid transparent;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+    display: flex;
+    width: 100%;
+    font-size: 1em;
+    list-style-type: none;
+}
+
+.contenido-lista-nav li a:hover {
+    background-color: pink;
+    border-right: 2px solid palevioletred;
+    list-style: none;
+}
+
+.contenido-lista-nav > li {
+    float:left ;
+    
+}
+
+.contenido-lista-nav li ul {
+    display: none;  
+    position: absolute;
+    min-width: 140px;
+    list-style-type: none;
+}
+
+.contenido-lista-nav li:hover > ul {
+    display: block;
+    z-index: 10;
+}
+
+
+
+
+
+.contenido-ancla {
+    text-decoration: none;
+    color: black;
+    border: white;
+}
+
+.cont-a-prod {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+/* FIN HEADER */
+
+/* div para slogan */
+
+.slogan{
+    border: 1px solid transparent;
+    width: 95%;
+    margin: 5px auto;
+    height: auto;
+    color: black;
+    padding: 40px;
+    
+}
+
+.slogan p {
+    padding: 5px;
+}
+
+/* fin slogan */
+
+/* seccion PRODUCTOS */
+
+.contenido-sec-prod{
+    height: auto;
+    background-color: rgb(220, 243, 235);
+    border: 1px solid transparent;
+    margin: 10px;
+    padding: 10px;
+}
+
+.contenido-productos{
+    background-color: rgb(236, 223, 227);
+    
+}
+
+.contenido-prod{
+    background-color: rgb(198, 187, 209);
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 95%;
+}
+
+.contenido-titulo2{
+    color: black;
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(233, 217, 220);
+}
+
+.contenido-img{
+    margin: auto;
+    padding: 10px;
+    height: auto;
+    width: 90%;
+    border: 1px solid transparent;
+    background-color: rgb(199, 199, 230);
+    background-size: contain;
+}
+
+img {
+    display: block;
+    border: 1px solid transparent;
+    width: 100%;
+    margin: auto;
+    background-size: contain;
+}
+
+.iframe-cont{
+    width: 100%;
+    width: 100%;
+    height: 200px;
+}
+
+.cont-desc-img{
+    border: 1px solid transparent;
+    width: 90%;
+    margin: auto;
+    background-color: rgb(193, 192, 212);
+    padding: 10px;
+    
+
+}
+
+/* FIN seccion PRODUCTOS */
+
+/* mapa */
+
+.contenido-mapa{
+    background-color: white;
+    border: 1px solid transparent;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.p-descripcion{
+    background-color: white;
+    padding: 5px;
+    margin: 5px;
+}
+/* fin mapa */
+
+/* video */
+
+.contenido-video{
+    background-color: white;
+    border: 1px solid transparent;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+
+.cont-btn-consulta {
+    border: 1px solid black;
+    color: black;
+    padding: 15px;
+    
+    border-radius: 25px;
+    margin: 30px auto;
+    width: 50%;
+    text-align: center;
+    background-color: rgb(160, 211, 200);
+    padding-bottom: 10px;
+}
+
+.cont-btn-consulta a{
+    text-decoration: none;
+    background-color: rgb(160, 211, 200);
+    color: black;
+    font-size: 2em;
+    
+}
+
+
+
+
+
+
+.contenido-footer {
+    border: 1px solid transparent;
+    height: 100px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px;
+    background-color: rgb(236, 204, 204);
+}
+
+.img-footer{
+    margin: 5px;
+}
